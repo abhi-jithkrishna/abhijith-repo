@@ -1,8 +1,7 @@
 <?php
 
 echo "Hello World";
-
-$_COOKIE['test'] = 'test';
-echo $_COOKIE['test'];
+$_GET['test'] = 'test';
+echo $_GET['test'];
 
 ?>
