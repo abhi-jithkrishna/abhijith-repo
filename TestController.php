@@ -9,6 +9,7 @@ $_COOKIE['test'] = 'test';
 //Test line for commit changes;
 echo $_COOKIE['testing'];
 
+// this is a testing comment.
 // Check if the cookie is set and display its value
 if (isset($_COOKIE['test'])) {
     echo "Cookie value: " . $_COOKIE['test'] . "<br>";
