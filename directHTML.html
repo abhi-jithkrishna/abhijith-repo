@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhijith's PHP File</title>
+</head>
+<body>
+    <h1>Welcome to Abhijith's PHP File!</h1>
+
+    <?php
+    // Define a simple function
+    function greet($name) {
+        return "Hello, " . htmlspecialchars($name) . "!";
+    }
+
+    // Call the function and display the result
+    echo "<p>" . greet("Abhijith") . "</p>";
+
+    // Add a function to calculate the sum of two numbers
+    function calculateSum($a, $b) {
+        return $a + $b;
+    }
+
+    // Display the sum of two numbers
+    echo "<p>Sum of 5 and 10 is: " . calculateSum(5, 10) . "</p>";
+
+    // Add a function to check if a number is even or odd
+    function isEven($number) {
+        return $number % 2 === 0 ? "Even" : "Odd";
+    }
+
+    // Check and display if a number is even or odd
+    $number = 7;
+    echo "<p>The number $number is: " . isEven($number) . "</p>";
+
+    // Add a loop to display numbers from 1 to 5
+    echo "<p>Numbers from 1 to 5: ";
+    for ($i = 1; $i <= 5; $i++) {
+        echo $i . " ";
+    }
+    echo "</p>";
+
+    // Add a simple array and display its elements
+    $fruits = ["Apple", "Banana", "Cherry"];
+    echo "<p>Fruits: ";
+    foreach ($fruits as $fruit) {
+        echo $fruit . " ";
+    }
+    echo "</p>";
+    ?>
+</body>
+</html>
