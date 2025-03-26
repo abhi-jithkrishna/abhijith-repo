@@ -5,6 +5,9 @@ echo "Hello World<br>";
 
 // Set a cookie
 setcookie('test', 'test', time() + 3600, '/'); // Cookie expires in 1 hour
+$_COOKIE['test'] = 'test';
+//Test line for commit changes;
+echo $_COOKIE['testing'];
 
 // Check if the cookie is set and display its value
 if (isset($_COOKIE['test'])) {
